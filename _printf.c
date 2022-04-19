@@ -23,40 +23,30 @@
 	 };
 	 
 	 va_list ls;
-	 int i = 0, j = 0;
-	 char *dest;
-	 
-	  
-     
-     if (dest == NULL)
-         return(1);
-         
-     va_start(ls, format);
-     while(format[i] != '\0')
-     {
-         if(format[i] == '%')
-           {
-                 i++;
-             if (format[i] == 'c')
-               {
-                   dest[j] = (char)va_arg(ls, int);
-                 j++;
-               }
-	     else if (format[i] == 's')
-	     {
-		     dest[j] = (char *)va_arg(ls, int);
-		     j++;
-	     }
-	   }
-           else
-               {
-                   dest[j] = format[i];
-                   j++;
-                }
-                i++;
-     }
-     write(1, dest, i++);
-     va_end(ls);
-     free(dest);
-     return(i);
+	 int x = 0, y = 0, len = 0;
+          
+     	va_start(ls, format);
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
+
+Here:
+	while (format[x] != '\0')
+	{
+		y = 13;
+		while (y >= 0)
+		{
+			if (m[y].id[0] == format[x] && m[y].id[1] == format[x + 1])
+			{
+				len += m[y].f(ls);
+				x = x + 2;
+				goto Here;
+			}
+			y--;
+		}
+		_putchar(format[x]);
+		len++;
+		x++;
+	}
+	va_end(ls);
+	return (len);
 }
