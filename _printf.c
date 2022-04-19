@@ -4,16 +4,16 @@
 #include "main.h"
 
 /**
- * _printf: takes an argument and prints to the standard output
+ * _printf - takes an argument and prints to the standard output
  * considering only the %,c and s specifiers
- * dest[i]: pointer pointing to the address of the new string.
- * format[i]: pointer to the source string.
+ *
+ * @format: pointer to the source string.
+ *
+ * Return: len
  */
- 
- int _printf(const char *format, ...)
- {
-
-	 convert_match m[] = {
+int _printf(const char *format, ...)
+{
+	convert_match m[] = {
 		{"%s", printf_string}, {"%c", printf_char},
 		{"%%", printf_37},
 		{"%i", printf_int}, {"%d", printf_dec}, {"%r", printf_srev},
@@ -21,11 +21,11 @@
 		{"%o", printf_oct}, {"%x", printf_hex}, {"%X", printf_HEX},
 		{"%S", printf_exclusive_string}, {"%p", printf_pointer}
 	 };
-	 
-	 va_list ls;
-	 int x = 0, y = 0, len = 0;
-          
-     	va_start(ls, format);
+
+	va_list ls;
+	int x = 0, y = 0, len = 0;
+
+	va_start(ls, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
