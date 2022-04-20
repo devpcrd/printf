@@ -13,10 +13,9 @@ The _printf function accepts an argument and prints to the standard output
 
 
 The printf function sends formatted output to stdout.
-A custom _printf() for learning purposes was developed by cohort  #9 students Jimmer and Edward Ortiz.
+A custom _printf() for learning purposes was developed by cohort  #5 students Maduka Chinedu and Ebube Okeke.
 _printf() function format string is a character string, beginning and ending in its initial shift state, if any. 
 These arguments are placed using the percentage '%' operator
-
 ------------
 
 
@@ -31,9 +30,8 @@ The `_printf` function was coded on an Ubuntu 20.04 LTS machine with `gcc` versi
 
 ------------
 
-
-Secrets of printfby Don colton
-https://www.cypress.com/file/54761/download
+Secrets of printf by prof Don colton
+https://alx-intranet.hbtn.io/rltoken/gxdsTXxWMklkBTgY197HYQ
 
 ------------
 
@@ -42,7 +40,6 @@ https://www.cypress.com/file/54761/download
 #### Authorized functions and macros
 
 ------------
-
 
 write (man 2 write)
 malloc (man 3 malloc)
