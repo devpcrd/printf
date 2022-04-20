@@ -22,7 +22,6 @@ int _printf(const char *[FORMAT], ...);
 .SH DESCRIPTION
 .SH ""
 
-
 The printf function sends formatted output to stdout.
 A custom _printf() for learning purposes was developed by cohort  #5 students Ebube Okeke and Chinedu Maduka as a project in ALX .
 _printf() function format string is a character string, beginning and ending in its initial shift state, if any. 
@@ -98,7 +97,6 @@ Current arguments handled by conversion specifiers:
  is not a pointer to a literal string. \
 
 .IT
-
 .B o, u, x, X
 - unsigned int argument converted to unsigned octal (o), unsigned decimal (u),
 unsigned hexidecimal notation (x) for lower case and (X) for upper case
