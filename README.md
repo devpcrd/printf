@@ -117,17 +117,17 @@ Specifier                |Output                        |Examples |
 
 ------------
 
-0. ###### I am not going anywhere. You can print that wherever you want to. I'm here and I am a Spur for life1.  I am not going anywhere. You can print that wherever you want to. I'm here and I am a Spur for life. 
+0. ###### I am not going anywhere. You can print that wherever you want to. I'm here and I am a Spur for life.  I am not going anywhere. You can print that wherever you want to. I'm here and I am a Spur for life. 
 Write a function that produces output according to a format.
 Handle the following conversion specifiers:
+- %
 - c
 - s
-- %
 
 1. ###### Education is when you read the fine print. Experience is what you get if you dont
 Handle the following conversion specifiers:
-- d
 - i
+- d
 
 2. ###### Just because its in print doesn't mean its the gospel
 Create a man page for the function
