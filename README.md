@@ -1,4 +1,4 @@
-# printf
+# _printf
 Create the printf function 
 This is a colaborative project of ebube okeke and Maduka chinedu
 The _printf function accepts an argument and prints to the standard output
@@ -195,4 +195,4 @@ All the above options work well together.
 ### Authors &copy;
 
 - Okeke Ebube < [devpcrd](https://github.com/devpcrd)
-- Chinedu Maduka < [machina94](https://github.com/machina94
+- Chinedu Maduka < [machina94](https://github.com/machina94)
